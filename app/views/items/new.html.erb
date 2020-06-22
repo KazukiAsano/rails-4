@@ -1,0 +1,7 @@
+<h1>新規商品購入</h1>
+  <%=form_with model:@item,local:true do |f|%>
+    <p>商品名<%=f.text_field:name%></p>
+    <p>価格<%=f.text_field:price%></p>
+    <%=f.submit "購入"%>
+  <%end%>
+    
